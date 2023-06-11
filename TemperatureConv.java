@@ -1,6 +1,4 @@
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
 public class TemperatureConv {
     public static void main(String[] args) {
@@ -16,6 +14,8 @@ public class TemperatureConv {
                 fahrenheitToCelsius(val);
             else
                 System.out.print("Information: argument should be ctf or ftc");
+                
+            sc.close();
 
         } catch (Exception e) {
             System.out.print("Error : argument ctf/ftc is missing");

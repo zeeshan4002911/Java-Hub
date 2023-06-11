@@ -56,8 +56,6 @@ Constraints
  */
 
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
 public class LeapYear {
     public static void main(String[] args) throws java.lang.Exception {
@@ -73,5 +71,6 @@ public class LeapYear {
             System.out.print(0);
 
         }
+        input.close();
     }
 }

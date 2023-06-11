@@ -10,5 +10,6 @@ public class SumTillN {
             sum += i;
         }
         System.out.printf("Sum till %d: %d", n, sum);
+        sc.close();
     }
 }

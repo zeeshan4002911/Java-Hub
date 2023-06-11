@@ -70,6 +70,7 @@ public class TriangleIdentifier {
             result = identifier(c, a, b);
         }
         System.out.print(result);
+        sc.close();
     }
 
     public static int identifier(int a, int b, int c) {

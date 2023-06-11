@@ -1,6 +1,4 @@
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
 public class FactorialOfN {
     public static void main(String[] args) throws java.lang.Exception {
@@ -12,5 +10,6 @@ public class FactorialOfN {
             fact = fact * (i);
         }
         System.out.print(fact);
+        input.close();
     }
 }

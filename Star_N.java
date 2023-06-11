@@ -1,6 +1,4 @@
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
 public class Star_N {
     public static void main(String[] args) throws java.lang.Exception {
@@ -13,5 +11,6 @@ public class Star_N {
         for(int i = 0 ; i < n; i++) {
             System.out.println("*");
         } 
+        sc.close();
     }
 }
