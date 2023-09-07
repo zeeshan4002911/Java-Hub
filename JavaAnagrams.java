@@ -100,13 +100,35 @@ public class JavaAnagrams {
 
     static boolean isAnagram(String a, String b) {
         // Complete the function
-        char[] a_arr = a.toCharArray();
-        char[] b_arr = b.toCharArray();
-        Arrays.sort(a_arr);
-        Arrays.sort(b_arr);
-        a = new String(a_arr);
-        b = new String(b_arr);
-        return a.compareTo(b) == 0 ? true : false;
+        // char[] a_arr = a.toCharArray();
+        // char[] b_arr = b.toCharArray();
+        // Arrays.sort(a_arr);
+        // Arrays.sort(b_arr);
+        // a = new String(a_arr);
+        // b = new String(b_arr);
+        // return a.compareTo(b) == 0 ? true : false;
+
+        // Without using any Library
+        a = a.toLowerCase();
+        b = b.toLowerCase();
+
+        if (a.length() == b.length())
+
+        {
+            int[] a_arr = new int[256];
+            int[] b_arr = new int[256];
+            for (int i = 0; i < a.length(); i++) {
+                a_arr[(int) a.charAt(i)] += 1;
+                b_arr[(int) b.charAt(i)] += 1;
+            }
+            for (int i = 0; i < 256; i++) {
+                if (a_arr[i] != b_arr[i])
+                    return false;
+            }
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public static void main(String[] args) {
