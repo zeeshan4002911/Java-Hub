@@ -33,12 +33,22 @@ public class JavaStringReverse {
         String A = sc.next();
         sc.close();
         /* Enter your code here. Print output to STDOUT. */
-        for (int i = 0, j = A.length() - 1; i < j; i++, j--) {
-            if (A.charAt(i) != A.charAt(j)) {
-                System.out.println("No");
-                return;
-            }
+        // Two pointers method
+        // for (int i = 0, j = A.length() - 1; i < j; i++, j--) {
+        // if (A.charAt(i) != A.charAt(j)) {
+        // System.out.println("No");
+        // return;
+        // }
+        // }
+        // System.out.println("Yes");
+
+        // String reverse
+        StringBuilder BString = (new StringBuilder(A)).reverse();
+        String B = BString.toString();
+        if (A.compareTo(B) == 0) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
         }
-        System.out.println("Yes");
     }
 }
