@@ -23,6 +23,7 @@ public class Basic {
         final int[] count = {(int) Math.floor(start_seconds)};
         Runnable task = () -> {
             if (count[0] >= 0) {
+                // \r for output on same line
                 System.out.print("\rInitialising in " + count[0]-- + " seconds ");
             } else {
                 System.out.println("\nStarted");
