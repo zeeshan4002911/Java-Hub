@@ -10,7 +10,7 @@ public class OOP {
 }
 
 class Person {
-    // Accesss modifier is protected to access from child classes
+    // Accesss modifier is protected to access from sub classes
     protected String name;
     protected int age;
 
@@ -33,7 +33,16 @@ class Person {
     }
 }
 
-class Student extends Person {
+interface Printable {
+    // Default modifier is abstract implicitly
+    abstract void print();
+}
+
+interface Loggable {
+    void log();
+}
+
+class Student extends Person implements Printable, Loggable {
     // Fields declaration
     private int rollNumber;
     private int score;
@@ -85,5 +94,16 @@ class Student extends Person {
             "Score       : " + score
         );
         this.introduce();
+    }
+
+    /* Interfaced method */
+    @Override
+    public void print() {
+        this.displayDetails();
+    }
+
+    @Override
+    public void log() {
+        System.out.println("Logging student: " + getName());
     }
 }
