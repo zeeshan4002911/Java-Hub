@@ -1,7 +1,10 @@
+package java_essentials;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
+import java_essentials.service.OOP;
 
 public class Basic {
     public static void main(String[] args) {
@@ -32,13 +35,17 @@ public class Basic {
             }
         };
 
-        scheduler.scheduleAtFixedRate(task, 1, 1, TimeUnit.SECONDS);
-
+        // scheduler.scheduleAtFixedRate(task, 1, 1, TimeUnit.SECONDS);
+        
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the score(%) to be graded: ");
         final int scorePercentage = scanner.nextInt();
         System.out.println("Grade: " + ControlFlow.getGrade(scorePercentage));
         scanner.close();
+
+        System.out.println();
+        // OOP Concept
+        OOP.main(null);
     }
 
 }
