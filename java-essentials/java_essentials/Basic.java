@@ -35,7 +35,7 @@ public class Basic {
             }
         };
 
-        // scheduler.scheduleAtFixedRate(task, 1, 1, TimeUnit.SECONDS);
+        scheduler.scheduleAtFixedRate(task, 1, 1, TimeUnit.SECONDS);
         
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the score(%) to be graded: ");
