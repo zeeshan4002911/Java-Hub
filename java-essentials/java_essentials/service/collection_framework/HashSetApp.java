@@ -4,12 +4,11 @@ import java.util.Scanner;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Type           | Keeps order?                 | Allows null?   | Sorted?
- * HashSet        | No order                     | Yes            | No
- * LinkedHashSet  | Maintains insertion order    | Yes            | No
- * TreeSet        | Natural order (sorted)       | No             | Yes (sorted)
- */
+/* Different types of Set in Java Collection */
+// Type           | Keeps order?                 | Allows null?   | Sorted?
+// HashSet        | No order                     | Yes            | No
+// LinkedHashSet  | Maintains insertion order    | Yes            | No
+// TreeSet        | Natural order (sorted)       | No             | Yes (sorted)
 
 public class HashSetApp {
     public static void main(String[] args) {
